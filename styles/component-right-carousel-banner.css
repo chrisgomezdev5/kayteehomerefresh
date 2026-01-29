@@ -4,6 +4,8 @@
   height: 827px;
   position: relative;
   display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .right-carousel-banner .left-container {
