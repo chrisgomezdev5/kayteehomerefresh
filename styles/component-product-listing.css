@@ -1,0 +1,61 @@
+/* breakpoints */
+#searchfilter .facet-wrapper h3 {
+  background: #ddd;
+  border-bottom: none;
+}
+
+#searchfilter .facet-wrapper h3 .link-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #565656;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#searchfilter .facet-wrapper h3 .link-btn::before, #searchfilter .facet-wrapper h3 .link-btn::after {
+  width: 1.2rem;
+}
+
+#searchfilter .facet-wrapper .form-check {
+  padding-bottom: initial;
+}
+
+#searchfilter .facet-wrapper .form-check label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.component.product-listing .search-box {
+  width: 100%;
+}
+
+.component.product-listing .search-box input[type="text"] {
+  color: #414141;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  box-shadow: none;
+}
+
+.component.product-listing #product-type .product-list .cgp-product .image-holder {
+  height: 22rem;
+  text-align: center;
+}
+
+.component.product-listing #product-type .product-list .cgp-product .image-holder img {
+  height: 100%;
+}
+
+.component.product-listing #product-type .product-list .cgp-product .body-copy h3 {
+  text-align: center;
+}
+
+.component.product-listing #product-type .product-list .cgp-product .body-copy h3 a {
+  color: #565656;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.product-listing #product-type .product-list .cgp-product .body-copy h3 a:hover {
+  text-decoration: underline;
+}

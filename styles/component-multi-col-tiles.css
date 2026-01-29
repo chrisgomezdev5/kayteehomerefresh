@@ -1,0 +1,117 @@
+/* breakpoints */
+.component.multi-column-content-tiles.variant-2 {
+  background: none;
+  padding: 0;
+}
+
+.component.multi-column-content-tiles.variant-2 a {
+  color: #fff;
+}
+
+.component.multi-column-content-tiles.variant-2 a:hover {
+  text-decoration: none;
+}
+
+.component.multi-column-content-tiles.variant-2 h3 {
+  color: #fff;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap {
+  padding: 0;
+  height: 100%;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body {
+  height: 100%;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body::after {
+  box-shadow: none;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body:hover::after {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body > div {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-left {
+  background-image: none;
+  display: none;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-left .field-image img {
+  min-height: 40rem;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right {
+  padding: 6rem 3.5rem;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy {
+  text-align: left;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy .field-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy .field-subtext li {
+  font-size: 1.6rem;
+}
+
+.component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy .field-subtext h3 {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .spacer-col:last-child:not(:nth-child(even)) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body {
+    position: relative;
+    min-height: 40rem;
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-left {
+    position: absolute;
+    left: 15px;
+    display: block;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-left .field-image {
+    height: 100%;
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-left .field-image img {
+    min-height: initial;
+    height: 100%;
+    object-position: bottom;
+    object-fit: contain;
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: calc(50% + 30px);
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy .field-title {
+    font-size: 3.2rem;
+  }
+  .component.multi-column-content-tiles.variant-2 .wrapper .inner-wrap .copy-wrap .card-body .col-right .body-copy .field-subtext li {
+    font-size: 1.6rem;
+  }
+}

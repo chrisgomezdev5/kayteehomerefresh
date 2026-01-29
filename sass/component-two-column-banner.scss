@@ -1,0 +1,135 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.two-column-banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: $dark-green;
+    color: #fff;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        height: 450px;   
+        //max-height: 450px;      
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding: 50px;  
+        max-width: 1366px;
+        position: relative;
+    }
+ 
+
+
+    .left-column {
+        width: 100%;
+        margin-bottom: 50px;
+
+        @include respond-to(tab) {
+            width: 50%;
+            margin-bottom: unset;
+            padding-left: 70px;
+        }
+
+        .copy-container {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            position: relative;
+
+            @include respond-to(tab) {
+                width: 420px;
+                padding: 50px;
+            }
+
+            .title {
+                margin-bottom: 10px;
+
+                h2 {
+                    color: #fff;
+                    font-family: 'Bernhardt CG', sans-serif;
+                    letter-spacing: 0.1em;                    
+                }
+
+                
+            }
+
+            .description {
+                margin-bottom: 30px;
+            }
+
+            .cta {
+                a {
+                    padding: 10px 30px;
+                    text-decoration: none;
+                    background-color: #E41C38;
+                    color: #fff;
+                    @include Ubuntu-font-stack();
+                }
+            }
+        }
+    }
+
+    .right-column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 1000px) {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .image-container {
+            
+            height: auto;
+            position: relative;
+
+            @media screen and (min-width: 1000px) {
+                width: 100%;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                position: relative;
+
+
+                @media screen and (min-width: 1000px) {
+                    position: absolute;
+                    top: -90px;
+                    right: -90px;
+                    max-width: unset;
+                }     
+
+                @media screen and (min-width: 1170px) {
+                    right: 50px;
+                }
+            }
+        }
+    }
+
+    .offset-image-container {
+        position: absolute;
+        bottom: 0px;
+        left: 5vw;
+        width: 90%;
+
+        @media screen and (min-width: 1000px) {
+            bottom: -60px;
+            left: 20px;
+            width: 100%;
+        }
+
+    }
+}

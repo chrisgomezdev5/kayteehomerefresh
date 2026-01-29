@@ -1,0 +1,75 @@
+/* breakpoints */
+.right-carousel-banner {
+  width: 1942.24px;
+  height: 827px;
+  position: relative;
+  display: flex;
+}
+
+.right-carousel-banner .left-container {
+  position: relative;
+  width: 50%;
+}
+
+.right-carousel-banner .left-container .primary-image {
+  width: 961.31px;
+  height: 827px;
+}
+
+.right-carousel-banner .left-container .secondary-image {
+  width: 367.01px;
+  height: 333.25px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.right-carousel-banner .right-container {
+  width: 50%;
+  height: 100%;
+  background: #FDF9F4;
+  position: relative;
+}
+
+.right-carousel-banner .right-container .slide-container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.right-carousel-banner .right-container .slide-container .slide {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 500px;
+}
+
+.right-carousel-banner .right-container .slide-container .slide.active {
+  opacity: 1;
+}
+
+.right-carousel-banner .right-container .slide-container .slide .button-container {
+  width: 300px;
+}
+
+.right-carousel-banner .right-container .navigation-buttons {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.right-carousel-banner .right-container .navigation-buttons .carousel-button {
+  transition: background 0.3s ease-in-out;
+}
+
+.right-carousel-banner .right-container .navigation-buttons .carousel-button:hover {
+  opacity: 0.8;
+}

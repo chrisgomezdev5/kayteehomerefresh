@@ -1,0 +1,70 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.content-tile-grid-background {
+    width: 100%;
+    padding: 50px;
+
+    .background-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            &.image-mobile {
+
+                @include respond-to(tab) {
+                    display: none;
+                }                    
+            }
+
+            &.image-desktop {
+                display: none;
+
+                @include respond-to(tab) {
+                    display: block;
+                }                
+            }
+
+
+        }
+    }
+    .inner-container {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            width: 100%;
+            background-color: #DFF3F5;
+            width: 313px;
+            height: 100%;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 50px;
+
+            @include respond-to(tab) {
+                height: 275px;
+            }
+
+            .card-title {
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .card-description {
+                text-align: center;
+            }
+        }
+    }
+
+}

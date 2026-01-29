@@ -1,0 +1,161 @@
+/* breakpoints */
+.component.product-details.variant-4 .product-wrapper h1 {
+  font-size: 3.1rem;
+  color: #f70915;
+  text-transform: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.product-details.variant-4 .product-wrapper .body-copy {
+  margin-bottom: 1rem;
+}
+
+.component.product-details.variant-4 .product-wrapper .body-copy p {
+  color: #414141;
+}
+
+.component.product-details.variant-4 .product-wrapper .body-copy p strong span {
+  font-weight: 700;
+}
+
+.component.productimage .image-placeholder {
+  border: none;
+}
+
+.component.productimage .inner-wrap .image-container .slick-next::before, .component.productimage .inner-wrap .image-container .slick-next::after,
+.component.productimage .inner-wrap .image-container .slick-prev::before,
+.component.productimage .inner-wrap .image-container .slick-prev::after {
+  content: "\f061";
+  color: #414141;
+  font-size: 15px;
+  border-radius: 50%;
+  padding: 0.4rem;
+  transform: rotate(180deg);
+}
+
+.component.productimage .inner-wrap .image-container .slick-next::after,
+.component.productimage .inner-wrap .image-container .slick-prev::after {
+  display: none;
+}
+
+.component.productimage .inner-wrap .image-container .slick-next:hover::before, .component.productimage .inner-wrap .image-container .slick-next:hover::after,
+.component.productimage .inner-wrap .image-container .slick-prev:hover::before,
+.component.productimage .inner-wrap .image-container .slick-prev:hover::after {
+  background-color: #d6d1ca;
+}
+
+.component.productimage .inner-wrap .image-container .slick-next::before {
+  display: none;
+}
+
+.component.productimage .inner-wrap .image-container .slick-next:after {
+  display: block;
+  transform: rotate(0deg);
+}
+
+.component.productimage .inner-wrap .image-container .field-image img {
+  border: 1px solid #ddd;
+}
+
+.component.productimage .inner-wrap:not(.iscarousel) .image-container > div {
+  width: calc(33% - 1rem);
+}
+
+.component.ps-widget[ps-sku] {
+  margin: 1.5rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.component.product-variant .where-to-buy {
+  padding: 0;
+}
+
+.component.product-variant h4 {
+  color: #414141;
+}
+
+.component.product-variant select {
+  background: #ddd;
+  color: #414141;
+  font-size: 1.6rem;
+}
+
+.component.product-variant ul {
+  padding-inline-start: 4rem;
+}
+
+.component.product-variant ul li {
+  font-size: 1.6rem;
+  list-style: disc;
+  line-height: 1.42857;
+}
+
+.component.product-variant .product-description-accordion .panel {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.component.product-variant .product-description-accordion .panel .panel-heading h4 {
+  padding: 1.2rem 0;
+  margin: auto;
+}
+
+.component.product-variant .product-description-accordion .panel .panel-heading h4 a {
+  color: #414141;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.product-variant .product-description-accordion .panel .panel-heading h4 a:hover {
+  color: #f70915;
+}
+
+.component.product-variant .product-description-accordion .panel .panel-heading h4 a::after {
+  content: ">";
+  float: right;
+  font-size: 2rem;
+}
+
+.component.product-variant .product-description-accordion .panel .panel-heading h4 a.collapsed::after {
+  content: "^";
+}
+
+.component.product-variant .product-description-accordion .panel .panel-body {
+  padding: 1.5rem;
+}
+
+.component.product-variant .dimensions,
+.component.product-variant .weight {
+  line-height: 1.5;
+}
+
+.component.product-variant .dimensions h4,
+.component.product-variant .weight h4 {
+  font-family: "Ubuntu", sans-serif;
+  color: #565656;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.component.product-variant .variant-id {
+  line-height: 1.5;
+}
+
+.component.product-variant .variant-id p {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #565656;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.product-variant .variant-id p span {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  .component.product-details.variant-4 .product-wrapper h1 {
+    font-size: 4.4rem;
+  }
+}

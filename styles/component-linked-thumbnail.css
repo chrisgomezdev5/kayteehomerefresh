@@ -1,0 +1,38 @@
+/* breakpoints */
+.component.linked-thumbnail.quick-links {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component.linked-thumbnail.quick-links.category-list {
+  background: #005d88;
+}
+
+.component.linked-thumbnail.quick-links.recent-posts {
+  background: #00b0db;
+}
+
+.component.linked-thumbnail.quick-links h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.component.linked-thumbnail.quick-links ul {
+  margin-bottom: 2rem;
+  padding-inline-start: 1rem;
+}
+
+.component.linked-thumbnail.quick-links ul li {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.component.linked-thumbnail.quick-links .QuickLink-Style a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}

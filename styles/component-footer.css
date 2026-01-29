@@ -1,0 +1,70 @@
+/* breakpoints */
+#footer {
+  background: url("../images/footer_grass.png") no-repeat bottom;
+  min-height: 25rem;
+}
+
+#footer .utility-navigation.social-links .icon-container {
+  border: none;
+}
+
+#footer .utility-navigation.social-links .icon-container a:hover {
+  color: #f70915;
+  text-decoration: none;
+}
+
+#footer .utility-navigation.social-links .icon-container a .fa {
+  font-size: 4rem;
+}
+
+#footer .component.rich-text h3 {
+  color: #000;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+#footer .component.rich-text span {
+  font-size: 1.6rem;
+  color: #565656;
+}
+
+#footer .component.rich-text p {
+  color: #fff;
+  font-size: 1.52rem;
+}
+
+#footer .component.rich-text p a {
+  font-family: "tahoma", sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+#footer .component.rich-text p a:hover {
+  color: #f70915;
+  text-decoration: underline;
+}
+
+#footer .component.rich-text .copyright p {
+  font-family: "Arial", sans-serif;
+}
+
+#footer .component.rich-text .copyright p span {
+  color: #fff;
+  font-size: 1.52rem;
+}
+
+#footer .link-list.inline-link ul li .field-link a {
+  color: #fff;
+  font-size: 1.52rem;
+  font-weight: 400;
+}
+
+#footer .link-list.inline-link ul li .field-link a:hover {
+  color: #fff;
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+#footer .link-list.inline-link ul li.even::before {
+  background: #fff;
+}

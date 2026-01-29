@@ -1,0 +1,232 @@
+/* breakpoints */
+.component.hero.with-title-top.border-green {
+  border-bottom: 3px solid #6f9b38;
+}
+
+.component.hero.with-title-top .hero-banner-image a {
+  cursor: auto;
+}
+
+.component.hero.with-text.orange-overlay .wrap .field-herobannertitle .caption {
+  background-color: #e5ba6c;
+}
+
+.component.hero.with-text.blue-overlay .wrap .field-herobannertitle .caption {
+  background-color: #35bcdb;
+}
+
+.component.hero.with-text.orange-overlay .wrap .field-herobannertitle .caption, .component.hero.with-text.blue-overlay .wrap .field-herobannertitle .caption {
+  border: none;
+  width: 100%;
+  padding: 4rem;
+  text-align: left;
+}
+
+.component.hero.with-text.orange-overlay .wrap .field-herobannertitle .caption a:active, .component.hero.with-text.blue-overlay .wrap .field-herobannertitle .caption a:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.component.hero.with-text .wrap {
+  background-size: auto 35rem;
+  background-position: 20% 0;
+  background-repeat: no-repeat;
+  padding-top: 28%;
+  height: 51.5rem;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle {
+  transform: none;
+  padding: initial;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle .caption {
+  background: #f8bd00;
+  padding: 4rem;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle h2 {
+  font-size: 2.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  padding: 1rem 0;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle a:hover {
+  text-decoration: none;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle a::after {
+  content: ">>>";
+  margin-left: 1rem;
+}
+
+.component.hero.with-text .wrap .field-herobannertitle .score-highlight-body {
+  font-size: 1.6rem;
+}
+
+.component.hero.banner-adjustable-height {
+  background: url("../images/blue_background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.component.hero.banner-adjustable-height .banner-wrapper {
+  margin: 2rem auto;
+}
+
+.component.hero.banner-adjustable-height .banner-image {
+  height: 25rem;
+  text-align: center;
+}
+
+.component.hero.banner-adjustable-height .banner-image img {
+  width: auto;
+  height: 100%;
+}
+
+.component.hero.banner-adjustable-height .inner-container {
+  max-width: initial;
+  display: block !important;
+}
+
+.component.hero.banner-adjustable-height .banner-content-wrapper {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.component.hero.banner-adjustable-height .hero-banner-title {
+  color: #f70915;
+  font-size: 2.4rem;
+}
+
+.component.hero.banner-adjustable-height .hero-banner-description {
+  color: #565656;
+  font-size: 1.6rem;
+}
+
+.component.hero.with-carousel .field-heroimagedesktop {
+  height: 35rem;
+}
+
+.component.hero.with-carousel .field-heroimagedesktop img {
+  object-fit: cover;
+  object-position: 35% 50%;
+  height: 100%;
+}
+
+.component.hero.with-carousel .hero-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 56rem;
+  height: 20rem;
+  transform: none;
+  top: auto;
+  bottom: 0;
+  right: 15%;
+}
+
+.component.hero.with-carousel .hero-container h1 {
+  top: auto;
+  padding: 4rem;
+}
+
+.component.hero.with-carousel .hero-container h2 {
+  font-size: 2.2rem;
+}
+
+.component.hero.with-carousel .hero-container .score-highlight-body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #414141;
+}
+
+@media only screen and (min-width: 768px) {
+  .component.hero.banner-adjustable-height .banner-wrapper {
+    width: 90%;
+  }
+  .component.hero.banner-adjustable-height .banner-image {
+    text-align: initial;
+  }
+  .component.hero.banner-adjustable-height .inner-container {
+    width: 100rem;
+  }
+  .component.hero.banner-adjustable-height .banner-content-wrapper {
+    left: 62%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .component.hero.with-title-top.border-green {
+    border-bottom: 1px solid #6f9b38;
+  }
+  .component.hero.with-text.orange-overlay .wrap .field-herobannertitle .caption {
+    background-color: rgba(229, 186, 108, 0.7);
+  }
+  .component.hero.with-text.blue-overlay .wrap .field-herobannertitle .caption {
+    background-color: rgba(53, 188, 219, 0.7);
+  }
+  .component.hero.with-text.orange-overlay .wrap .field-herobannertitle, .component.hero.with-text.blue-overlay .wrap .field-herobannertitle {
+    right: 15%;
+    top: auto;
+  }
+  .component.hero.with-text.orange-overlay .wrap .field-herobannertitle .caption, .component.hero.with-text.blue-overlay .wrap .field-herobannertitle .caption {
+    height: 31.5rem;
+    width: 56rem;
+    float: right;
+  }
+  .component.hero.with-text .wrap {
+    background-size: cover;
+    background-position: 35% 50%;
+    height: 54.5rem;
+  }
+  .component.hero.with-text .wrap .field-herobannertitle {
+    right: 0;
+    top: 50%;
+  }
+  .component.hero.with-text .wrap .field-herobannertitle .caption {
+    background-color: transparent;
+  }
+  .component.hero.with-text .wrap .field-herobannertitle h2 {
+    font-size: 4.4rem;
+  }
+  .component.hero.with-text .wrap .field-herobannertitle a {
+    font-size: 1.8rem;
+  }
+  .component.hero.with-text .wrap .field-herobannertitle .score-highlight-body {
+    font-size: 2rem;
+  }
+  .component.hero.banner-adjustable-height .banner-wrapper {
+    width: 80%;
+  }
+  .component.hero.banner-adjustable-height .inner-container {
+    width: 100%;
+  }
+  .component.hero.banner-adjustable-height .banner-content-wrapper {
+    left: 57%;
+    padding: 0 2rem;
+  }
+  .component.hero.banner-adjustable-height .hero-banner-title {
+    font-size: 3.2rem;
+  }
+  .component.hero.with-carousel .field-heroimagedesktop {
+    height: 54.5rem;
+  }
+  .component.hero.with-carousel .hero-container {
+    height: 31.5rem;
+  }
+  .component.hero.with-carousel .hero-container h1 {
+    padding: 0;
+  }
+  .component.hero.with-carousel .hero-container h2 {
+    font-size: 3.2rem;
+  }
+}

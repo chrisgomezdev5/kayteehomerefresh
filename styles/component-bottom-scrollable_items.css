@@ -1,0 +1,336 @@
+/* breakpoints */
+.component .bottom-scrollable-items {
+  margin: 5px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+    max-width: 1366px;
+  }
+}
+
+.component .bottom-scrollable-items .top-container {
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.component .bottom-scrollable-items .top-container .left-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .top-container .left-container {
+    width: 50%;
+  }
+}
+
+.component .bottom-scrollable-items .top-container .left-container img {
+  width: 100%;
+  max-width: 640px;
+}
+
+.component .bottom-scrollable-items .top-container .right-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .top-container .right-container {
+    width: 50%;
+  }
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner .subtitle {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner .title h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Bernhardt CG', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner .description {
+  margin-bottom: 50px;
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner .cta a {
+  color: #fff;
+  width: 153px;
+  height: 50px;
+  padding: 20px 30px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component .bottom-scrollable-items .top-container .right-container .right-container-inner .cta a:hover {
+  text-decoration: none;
+}
+
+.component .bottom-scrollable-items .divider {
+  display: flex;
+}
+
+.component .bottom-scrollable-items .divider .divider-label {
+  color: #fff;
+  width: 150px;
+  font-weight: 700;
+}
+
+.component .bottom-scrollable-items .divider .divider-line {
+  position: relative;
+  width: 90%;
+}
+
+.component .bottom-scrollable-items .divider .divider-line::after {
+  content: ' ';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  left: 0px;
+  top: 12px;
+}
+
+.component .bottom-scrollable-items .bottom-container {
+  display: flex;
+  position: relative;
+  overflow: inherit;
+}
+
+.component .bottom-scrollable-items .bottom-container .prev-button {
+  position: absolute;
+  left: 35%;
+  bottom: -30px;
+  background-color: #ffffff4a;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.component .bottom-scrollable-items .bottom-container .prev-button:hover {
+  cursor: pointer;
+}
+
+.component .bottom-scrollable-items .bottom-container .prev-button::after {
+  font-family: "FontAwesome";
+  content: "\f104";
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .bottom-container .prev-button {
+    left: -40px;
+    top: 110px;
+  }
+}
+
+.component .bottom-scrollable-items .bottom-container .next-button {
+  position: absolute;
+  right: 35%;
+  background-color: #ffffff4a;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  bottom: -30px;
+}
+
+.component .bottom-scrollable-items .bottom-container .next-button:hover {
+  cursor: pointer;
+}
+
+.component .bottom-scrollable-items .bottom-container .next-button::after {
+  font-family: "FontAwesome";
+  content: "\f105";
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .bottom-container .next-button {
+    right: -40px;
+    top: 110px;
+  }
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container {
+    margin-right: 10px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container {
+    visibility: visible;
+  }
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container.active {
+  visibility: visible;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container .image-container {
+  width: 100%;
+  height: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container .image-container img {
+  height: auto;
+  max-width: unset;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container .image-container img {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+.component .bottom-scrollable-items .bottom-container .bottom-items-container .item-container .title-container a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Bernhardt CG', sans-serif;
+  letter-spacing: 0.1em;
+  text-wrap: auto;
+}
+
+.component .bottom-scrollable-items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.component .bottom-scrollable-items::-webkit-scrollbar-thumb {
+  background-color: #aa9f90;
+  border-radius: 4px;
+}
+
+.component .bottom-scrollable-items::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.component.yellow .bottom-scrollable-items {
+  background-color: #F0B323;
+}
+
+.component.yellow .bottom-scrollable-items .top-container .right-container .right-container-inner {
+  color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .top-container .right-container .right-container-inner h2 {
+  color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .top-container .right-container .right-container-inner .cta a {
+  color: #5F4507;
+  background-color: #F7D588;
+}
+
+.component.yellow .bottom-scrollable-items .divider .divider-label {
+  color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .divider .divider-line::after {
+  background-color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .bottom-container .item-container .title-container a {
+  color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .bottom-container .prev-button::after {
+  color: #5F4507;
+}
+
+.component.yellow .bottom-scrollable-items .bottom-container .next-button::after {
+  color: #5F4507;
+}
+
+.component.blue .bottom-scrollable-items {
+  background-color: #407EC9;
+}
+
+.component.blue .bottom-scrollable-items .top-container .right-container .right-container-inner .cta a {
+  color: #263971;
+  background-color: #B2CDED;
+}
+
+.component.green .bottom-scrollable-items {
+  background-color: #509E2F;
+}
+
+.component.green .bottom-scrollable-items .top-container .right-container .right-container-inner .cta a {
+  color: #284F17;
+  background-color: #B1E29D;
+}
+
+.component.right-image .top-container {
+  flex-direction: row-reverse;
+}

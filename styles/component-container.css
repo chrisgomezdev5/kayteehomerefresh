@@ -1,0 +1,12 @@
+/* breakpoints */
+.container:not(.col-12) {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 114rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container:not(.col-12) {
+    max-width: 75rem;
+  }
+}

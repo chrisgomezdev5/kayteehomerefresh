@@ -1,0 +1,217 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.component {
+  &.hero-carousel {
+    .slick-prev::before {
+      background-image: url("../images/left_arrow.png");
+    }
+    .slick-next:after {
+      background-image: url("../images/right_arrow.png");
+    }
+    .slick-prev::before,
+    .slick-next:after {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%;
+      width: 25px;
+      height: 60px;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+    .slick-dots li {
+      background-color: transparent;
+      border-radius: 0;
+      &.slick-active {
+        border-color: $white;
+        background-color: $white;
+      }
+    }
+
+    &.mulitple-bottom-links {
+      .field-slidecardtitle {
+        float: initial;
+        text-align: center;
+
+        h2 {
+          color: $white;
+          font-size: 4.4rem;
+          @include Ubuntu-font-stack();
+        }
+        p {
+          color: $white;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+  &.hero-carousel {
+    &.responsive-carousel:not(.mulitple-bottom-links) {
+      .slick-prev,
+      .slick-next {
+        display: block !important;
+      }
+      .slick-next {
+        right: 6%;
+      }
+      .mobile-img {
+        height: 33rem;
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: 20%;
+        }
+      }
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        .body-copy {
+          width: 100%;
+          max-width: 100%;
+          .caption {
+            h2 {
+              color: $white;
+              font-size: 2.4rem;
+              @include Ubuntu-font-stack();
+            }
+            p {
+              color: $white;
+              font-size: 2.5rem;
+              font-weight: 400;
+            }
+            h3 {
+              a {
+                color: $white;
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+
+      &.home-carousel {
+        .mobile-img {
+          height: 20rem;
+          img {
+            object-position: 40% 0;
+          }
+        }
+        .slick-next,
+        .slick-prev {
+          top: 35%;
+        }
+        .container {
+          .body-copy {
+            min-height: 21rem;
+            .caption {
+              max-width: 100%;
+              h2 {
+                font-size: 2.4rem;
+              }
+
+              p {
+                font-size: 1.6rem;
+              }
+
+              a {
+                h3 {
+                  color: $white;
+                  font-size: 1.2rem;
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+
+              .sxa-btn {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to(tab) {
+    &.hero-carousel {
+      &.responsive-carousel:not(.mulitple-bottom-links) {
+        .slick-next {
+          right: 3%;
+        }
+        .container {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @include respond-to(desktop) {
+    &.hero-carousel {
+      &.responsive-carousel:not(.mulitple-bottom-links) {
+        .slide:not(.wrap) {
+          min-height: 55rem;
+        }
+        .slick-next {
+          right: 2%;
+        }
+        .container {
+          max-width: 114rem;
+          .body-copy {
+            border-radius: 0;
+            max-width: 46.7rem;
+            .caption {
+              h2 {
+                font-size: 4.4rem;
+              }
+              p {
+                color: $white;
+                font-size: 2.5rem;
+                font-weight: 400;
+              }
+              h3 {
+                a {
+                  color: $white;
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+        &.home-carousel {
+          .container {
+            display: flex;
+            justify-content: center;
+            .slick-next,
+            .slick-prev {
+              top: 50%;
+            }
+            .body-copy {
+              background-color: transparent !important; // to override default settings
+              .caption {
+                max-width: 100%;
+                h2 {
+                  font-size: 4.4rem;
+                }
+                p {
+                  font-size: 2.5rem;
+                }
+                a {
+                  h3 {
+                    font-size: 1.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

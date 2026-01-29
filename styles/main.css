@@ -1,0 +1,173 @@
+/* breakpoints */
+main {
+  min-height: calc(100vh - 500px);
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.42857;
+  color: #414141;
+  background-color: #fff;
+  -webkit-font-smoothing: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.article-page .component.hero {
+  padding: 0 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f70915;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #f70915;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.component.content {
+  line-height: 1.42857;
+}
+
+.component.content.article-subtext {
+  font-size: 2.24rem;
+  font-weight: 700;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.component.content h1 {
+  font-size: 3.1rem;
+  color: #f70915;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.content h2,
+.component.content h3,
+.component.content h4,
+.component.content h5,
+.component.content h6 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.component.content h2 {
+  font-size: 2.2rem;
+}
+
+.component.content h4 a {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.content p {
+  margin-bottom: 1rem;
+}
+
+.component.content a {
+  color: #f70915;
+  text-decoration: none;
+}
+
+.component.content a:hover {
+  text-decoration: underline;
+}
+
+.component.content li {
+  font-size: 1.6rem;
+}
+
+.component.content ul {
+  padding-inline-start: 4rem;
+}
+
+.component.content ul li {
+  list-style: inherit;
+}
+
+.component.content ol li {
+  list-style-position: initial;
+}
+
+.component.content sup {
+  line-height: 0;
+}
+
+.component.content table td {
+  border: 1px solid;
+}
+
+.component.content embed {
+  width: 100%;
+  min-height: 37.5rem;
+}
+
+.component.content .product-title h1 {
+  font-size: 3.1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.title h1 {
+  font-size: 3.1rem;
+  color: #f70915;
+  line-height: 1.1;
+  border-bottom: none;
+  cursor: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media only screen and (min-width: 992px) {
+  .component.content.article-subtext {
+    font-size: 3.2rem;
+  }
+  .component.content .product-title h1 {
+    font-size: 4.4rem;
+  }
+  .component.content h1 {
+    font-size: 4.4rem;
+  }
+  .component.title h1 {
+    font-size: 4.4rem;
+  }
+}
+
+.indent-top-xl {
+  padding-top: 20rem;
+  padding-bottom: initial;
+}
+
+.dark-blue-bg {
+  background-color: #005d88;
+}
+
+.dark-blue-bg .component.rich-text h1 {
+  color: #fff;
+}
+
+.green-band-bg {
+  background: url("../images/green_band.jpg");
+}
+
+.green-band-bg * {
+  color: #fff !important;
+}
+
+.exact-title .component.title h1 {
+  font-size: 3.4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-color-black div, .text-color-black p, .text-color-black a, .text-color-black li, .text-color-black h1, .text-color-black h2, .text-color-black h3, .text-color-black h4, .text-color-black h5, .text-color-black h6 {
+  color: #000;
+}

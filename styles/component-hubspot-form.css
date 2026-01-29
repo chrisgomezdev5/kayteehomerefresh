@@ -1,0 +1,149 @@
+/* breakpoints */
+.component .hubspot-form .submitted-message {
+  color: #fff;
+}
+
+.component .hubspot-form input[type="submit"] {
+  line-height: 1.1;
+}
+
+.component .hubspot-form .hs-richtext h2 {
+  color: #fff;
+}
+
+.component .hubspot-form .hs-richtext p {
+  color: #fff;
+}
+
+.component .hubspot-form .hs-form-field {
+  margin: 2rem 0;
+}
+
+.component .hubspot-form legend {
+  color: #fff;
+  font-size: 2.1rem;
+}
+
+.component .hubspot-form .hs-form .hs-input {
+  -webkit-appearance: auto;
+  appearance: auto;
+  box-shadow: none;
+}
+
+.component .hubspot-form .hs-form .hs-form-checkbox {
+  padding: initial;
+}
+
+.component .hubspot-form .hs-form .hs-form-checkbox label {
+  display: flex;
+}
+
+.component .hubspot-form .hs-form .hs-form-checkbox label span {
+  font-weight: 500;
+}
+
+.component .hubspot-form .hs-form textarea,
+.component .hubspot-form .hs-form input[type="text"],
+.component .hubspot-form .hs-form input[type="email"],
+.component .hubspot-form .hs-form input[type="tel"] {
+  border: 1px solid #e3e3e3;
+  height: 4rem;
+  padding: 5px 18px;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #414141;
+  border-radius: 3px;
+  box-shadow: none;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.component .hubspot-form .hs-form textarea:focus,
+.component .hubspot-form .hs-form input[type="text"]:focus,
+.component .hubspot-form .hs-form input[type="email"]:focus,
+.component .hubspot-form .hs-form input[type="tel"]:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.component .hubspot-form .hs-form input:not([type="image"]) {
+  box-sizing: inherit;
+}
+
+.component .hubspot-form .hs-form .hs-form-booleancheckbox {
+  width: auto;
+}
+
+.component .hubspot-form .hs-form .hs-form-booleancheckbox label input[type="checkbox"].hs-input {
+  visibility: visible;
+  min-width: auto;
+  height: 2rem;
+  margin: 0;
+  background: none;
+  border: 1px solid #414141;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+.component .hubspot-form .hs-form .hs-form-booleancheckbox label input[type="checkbox"].hs-input:focus {
+  box-shadow: none;
+}
+
+.component .hubspot-form .hs-form .input select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/triangle_red.png");
+  background-position: 95% 50%;
+  background-size: 12px 6px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border: 1px solid #e3e3e3;
+  height: 4rem;
+  padding: 5px 18px;
+  font-weight: 600;
+  color: #414141;
+  border-radius: 3px;
+  box-shadow: none;
+  max-width: 100%;
+}
+
+.component .hubspot-form .hs-form label {
+  margin-bottom: 5px;
+}
+
+.component .hubspot-form .hs-form label span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.component .hubspot-form .hs-form .hs-error-msgs li label {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f70915;
+}
+
+.component .hubspot-form .hs-form .form-columns-1 p {
+  color: #fff;
+}
+
+.component .hubspot-form .hs-form .form-columns-1 p strong {
+  font-weight: 500;
+}
+
+.component .hubspot-form .hs-form .form-columns-1 .input .hs-input,
+.component .hubspot-form .hs-form .form-columns-1 .input input[type="email"] {
+  max-width: 100%;
+}
+
+.component .hubspot-form .hs-form .form-columns-1 .input li .hs-input {
+  min-width: auto;
+  width: auto;
+}
+
+.component .hubspot-form .hs-form .form-columns-2 .input .hs-input {
+  width: 100%;
+}

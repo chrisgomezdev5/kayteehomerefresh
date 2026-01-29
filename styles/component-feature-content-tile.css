@@ -1,0 +1,55 @@
+/* breakpoints */
+.component.feature-content-tiles.variant-1 {
+  padding: 0;
+}
+
+.component.feature-content-tiles.variant-1 .content-wrapper .inner-wrapper .copy-wrap .field-image {
+  max-width: 65%;
+  margin: auto;
+}
+
+.component.feature-content-tiles.variant-5.with-image-cta.feature-tiles .section-container .field-data a {
+  display: none;
+}
+
+.component.feature-content-tiles.variant-5.with-image-cta .section-container > .row {
+  justify-content: center;
+}
+
+.component.feature-content-tiles.variant-5.with-image-cta .section-container .field-data {
+  text-align: center;
+}
+
+.component.feature-content-tiles.variant-5.with-image-cta .section-container .field-data h2 {
+  color: #000;
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .component.feature-content-tiles.variant-5.with-image-cta .section-container .field-data h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.exact-tiles {
+  background: url("../images/blue_background.jpg");
+}
+
+.exact-tiles .component.feature-content-tiles.variant-5.with-image-cta h2 {
+  color: #f70915;
+  font-size: 4.4rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.exact-tiles .component.feature-content-tiles.variant-5.with-image-cta .section-container .field-image img {
+  height: 19rem;
+  width: auto;
+}
+
+.exact-tiles .component.feature-content-tiles.variant-5.with-image-cta .section-container .field-data h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #f70915;
+  font-family: "Roboto", sans-serif;
+}

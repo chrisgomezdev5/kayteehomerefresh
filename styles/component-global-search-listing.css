@@ -1,0 +1,67 @@
+/* breakpoints */
+.component.global-search-listing .search-box {
+  padding: 1.5rem;
+}
+
+.component.global-search-listing .search-box .search-wrapper .search-input-wrapper input {
+  padding: 1rem;
+  box-shadow: none;
+  border: 1px solid #e3e3e3;
+  font-size: 1.6rem;
+  border-radius: 3px;
+}
+
+.component.global-search-listing .search-box .search-wrapper::before {
+  display: none;
+}
+
+.component.global-search-listing #product-type h3,
+.component.global-search-listing #article-type h3,
+.component.global-search-listing #others-type h3 {
+  border-bottom: 2px solid #f70915;
+}
+
+.component.global-search-listing #product-type .product-list .image-holder,
+.component.global-search-listing #article-type .product-list .image-holder,
+.component.global-search-listing #others-type .product-list .image-holder {
+  height: 22rem;
+  text-align: center;
+}
+
+.component.global-search-listing #product-type .product-list .image-holder img,
+.component.global-search-listing #article-type .product-list .image-holder img,
+.component.global-search-listing #others-type .product-list .image-holder img {
+  height: 100%;
+}
+
+.component.global-search-listing #product-type .product-list .body-copy,
+.component.global-search-listing #article-type .product-list .body-copy,
+.component.global-search-listing #others-type .product-list .body-copy {
+  text-align: center;
+}
+
+.component.global-search-listing #product-type .product-list .body-copy h3,
+.component.global-search-listing #article-type .product-list .body-copy h3,
+.component.global-search-listing #others-type .product-list .body-copy h3 {
+  padding: 1rem 0;
+  border-bottom: none;
+}
+
+.component.global-search-listing #product-type .product-list .body-copy h3 a,
+.component.global-search-listing #article-type .product-list .body-copy h3 a,
+.component.global-search-listing #others-type .product-list .body-copy h3 a {
+  font-size: 2rem;
+}
+
+.component.global-search-listing #product-type .product-list .body-copy h3 a:hover,
+.component.global-search-listing #article-type .product-list .body-copy h3 a:hover,
+.component.global-search-listing #others-type .product-list .body-copy h3 a:hover {
+  color: #f70915;
+  text-decoration: underline;
+}
+
+.component.global-search-listing #product-type .product-list .body-copy p,
+.component.global-search-listing #article-type .product-list .body-copy p,
+.component.global-search-listing #others-type .product-list .body-copy p {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,25 @@
+/* breakpoints */
+.component.breadcrumb {
+  display: block;
+}
+
+.component.breadcrumb li {
+  margin-left: auto;
+}
+
+.component.breadcrumb li .navigation-title a {
+  color: #f70915;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.component.breadcrumb li .navigation-title a:hover {
+  color: #f70915;
+  text-decoration: underline;
+}
+
+.component.breadcrumb .separator {
+  color: #ccc;
+  font-weight: 400;
+}

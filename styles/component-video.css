@@ -1,0 +1,22 @@
+/* breakpoints */
+.pdp-page .component.video iframe {
+  width: 100%;
+  min-height: 25rem;
+}
+
+.component.video iframe {
+  width: 100%;
+  min-height: 25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .component.video iframe {
+    min-height: 40rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .component.video iframe {
+    min-height: 55rem;
+  }
+}

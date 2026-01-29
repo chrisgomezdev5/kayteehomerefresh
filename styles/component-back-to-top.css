@@ -1,0 +1,30 @@
+#back-to-top {
+  position: absolute;
+  bottom: 0px;
+}
+
+.back-to-top {
+  display: flex;
+  width: 200px;
+  position: relative;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.back-to-top .svg-container {
+  width: 25%;
+}
+
+.back-to-top .link {
+  width: 75%;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  padding-top: 2px;
+}
+
+.back-to-top .link:hover {
+  cursor: pointer;
+}

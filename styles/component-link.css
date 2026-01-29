@@ -1,0 +1,26 @@
+/* breakpoints */
+.component.link a {
+  border-bottom: none;
+  color: #6f9b38;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.component.link a:hover {
+  text-decoration: underline;
+}
+
+.component.link.learn-more a {
+  color: #f70915;
+  font-size: 2.2rem;
+}
+
+.component.link.learn-more a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 992px) {
+  .component.link.learn-more a {
+    font-size: 3.2rem;
+  }
+}

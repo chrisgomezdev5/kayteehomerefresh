@@ -1,0 +1,402 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.component {
+
+    .bottom-scrollable-items {
+        margin: 5px;
+        padding: 20px;
+        padding-bottom: 50px;
+
+        @include respond-to(tab) {
+            margin: auto;
+            margin-bottom: 50px;
+            padding: 50px;  
+            max-width: 1366px;         
+        }
+        .top-container {
+            padding-bottom: 50px;
+
+            @include respond-to(tab) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .left-container {
+                width: 100%;
+                @include respond-to(tab) {
+                    width: 50%;
+                }
+                img {
+                    width: 100%;
+                    max-width: 640px;
+                }
+            }
+
+            .right-container {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                color: #fff;
+
+                @include respond-to(tab) {
+                    width: 50%;
+                }  
+
+                .right-container-inner {
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .subtitle {
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                        @include Ubuntu-font-stack();
+                    }
+
+                    .title {
+                        h2 {
+                            color: #fff;
+                            margin-bottom: 20px;
+                            font-family: 'Bernhardt CG', sans-serif;
+                            letter-spacing: 0.1em;                            
+                        }
+                    }
+
+                    .description {
+                        margin-bottom: 50px;
+                    }
+
+                    .cta {
+                        a {
+                            color: #fff;
+                            width: 153px;
+                            height: 50px;
+                            padding: 20px 30px;
+                            border-radius: 3px;
+                            font-weight: 700;
+                            @include Ubuntu-font-stack();
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                
+
+              
+            }
+        }
+
+        .divider {
+            display: flex;
+
+            .divider-label {
+                color: #fff;
+                width: 150px;
+                font-weight: 700;
+            }
+
+            .divider-line {
+                position: relative;
+                width: 90%;
+
+                &::after {
+                    content: ' ';
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #fff;
+                    left: 0px;
+                    top: 12px;
+                }
+            }
+        }
+
+        .bottom-container {
+            display: flex;
+            position: relative;
+            overflow: inherit;
+            .prev-button {
+                position: absolute;
+                left: 35%;
+                bottom: -30px;
+                background-color: #ffffff4a;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &::after {
+                    font-family: "FontAwesome";
+                    content: "\f104";
+                    font-size: 2rem;
+                    color: #fff;
+                }
+
+                @include respond-to(tab) {
+                    left: -40px;
+                    top: 110px;
+                }        
+                
+                @include respond-to(large-desktop) {
+                    //display: inline-block;
+                }
+            }
+
+            .next-button {
+                position: absolute;
+                right: 35%;
+                background-color: #ffffff4a;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 20px;
+                bottom: -30px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+                                
+                &::after {
+                    font-family: "FontAwesome";
+                    content: "\f105";
+                    font-size: 2rem;
+                    color: #fff;
+                }
+
+                @include respond-to(tab) {
+                    right: -40px;
+                    top: 110px;
+                }
+
+                @include respond-to(large-desktop) {
+                    //display: inline-block;
+                }                
+            }   
+
+            .bottom-items-container {
+                overflow-x: hidden;
+                scroll-behavior: smooth;
+                white-space: nowrap;
+                padding: 1rem 0;     
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                &::-webkit-scrollbar {
+                    height: 8px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #ffffff;
+                    border-radius: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 4px;
+                }
+
+                @include respond-to(large-desktop) {
+                    //overflow-x: hidden;
+                }
+
+                .item-container {
+                    width: 100%;
+                    height: auto;
+                    visibility: hidden;
+                    position: relative;
+
+                    @include respond-to(tab) {
+                        margin-right: 10px;
+                        height: auto;
+                    }
+
+                    @include respond-to(tab) {
+                        visibility: visible;
+
+                    }
+
+                    &.active {
+                        visibility: visible;
+                    }
+
+                    .image-container {
+                        width: 100%;
+                        height: auto;   
+                        height: auto;
+                        margin-bottom: 10px;
+
+                        img {
+                            height: auto;
+                            max-width: unset;
+                            width: 100vw;
+                            //max-width: 300px;
+                            @include respond-to(tab) {
+                                width: 300px;
+                                max-width: 300px;
+                            }
+                        }
+                    }
+
+                    .title-container {
+                        a {
+                            color: #fff;
+                            text-decoration: none;   
+                            font-family: 'Bernhardt CG', sans-serif;
+                            letter-spacing: 0.1em;   
+                            text-wrap: auto;                  
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+
+
+
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: darken($light-grey, 20%);
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: lighten($light-grey, 20%);
+            border-radius: 4px;
+        }
+    }
+
+    &.yellow {
+
+        .bottom-scrollable-items {
+            background-color: $yellow;
+
+            .top-container {
+                .right-container {
+                    .right-container-inner {
+                        color: #5F4507;
+
+                        h2 {
+                            color: #5F4507;
+                        }
+
+                        .cta {
+                            a {
+                                color: #5F4507;
+                                background-color: #F7D588;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .divider {
+
+                .divider-label {
+                    color: #5F4507;
+                }
+
+                .divider-line {
+                    &::after {
+                        background-color: #5F4507;
+                    }
+                }
+            }
+
+            .bottom-container {
+
+                .item-container {
+
+                    .image-container {
+
+                    }
+
+                    .title-container {
+                        a {
+                            color: #5F4507;                       
+                        }
+                    }
+                }
+
+                .prev-button {
+                    &::after {
+                        color: #5F4507;
+                    }             
+                }
+
+                .next-button {                                   
+                    &::after {
+                        color: #5F4507;
+                    }
+                }   
+            }            
+        }
+    }
+
+    &.blue {
+
+        .bottom-scrollable-items {
+            background-color: $blue;
+
+            .top-container {
+                .right-container {
+                    .right-container-inner {
+                        .cta {
+                            a {
+                                color: #263971;
+                                background-color: #B2CDED;
+                            }
+                        }  
+                    }
+                }
+            }
+
+         
+        }
+    }    
+
+    &.green {
+
+        .bottom-scrollable-items {
+            background-color: $green;
+
+            .top-container {
+                .right-container {
+                    .right-container-inner {
+                        .cta {
+                            a {
+                                color: #284F17;
+                                background-color: #B1E29D;
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+    }   
+    
+    &.right-image {
+        .top-container {
+            flex-direction: row-reverse;
+        }
+    }
+}

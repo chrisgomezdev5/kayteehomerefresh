@@ -1,0 +1,146 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.component {
+  &.content-tile {
+    .text-overlay {
+      .tile-wrap {
+        margin: 4rem auto;
+        .text-wrap {
+          border-top: 10px solid #6f9b38;
+
+          h2 {
+            color: $black;
+          }
+          p {
+            font-size: 2.4rem;
+            line-height: 1.2;
+          }
+        }
+        .image-wrap {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+     
+    @media screen and (min-width: 1025px) {
+      .text-overlay {
+        .tile-wrap {
+          .text-wrap {
+            border-left: 10px solid #6f9b38;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 1px 0px 12px -3px rgba(0, 44, 39, 0.52);
+            max-width: 33%;
+            border-top: none;
+            padding: 3rem 1rem;
+
+            p {
+              font-size: 1.7rem;
+              line-height: $line-height;
+            }
+          }
+
+          &:nth-child(2n) {
+            .text-wrap {
+              border-right: 10px solid #6f9b38;
+            }
+          }
+        }
+      }
+    }
+
+    .product-category-tiles {
+      margin: auto;
+      width: 300px;
+
+      @include respond-to(tab) {
+        width: 400px;
+      }
+
+      @media screen and (min-width: 1025px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-around;
+      }
+
+      @media screen and (min-width: 1025px) {
+        justify-content: unset;
+      }
+
+      .tile-wrap {
+        position: relative;
+        margin: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media screen and (min-width: 1025px) {
+          width: 250px;
+        }
+
+        .text-wrap {
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          font-size: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+          line-height: 1.25;
+          color: #000;
+          max-width: 370px;
+
+          @media screen and (min-width: 1025px) {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          background-color: #f70915;
+          color: #fff;
+          font-weight: bold;
+
+            &::after {
+              content: "→";
+              position: absolute;
+              bottom: 5px;
+              right: 10px;
+              font-size: 20px;
+            }
+          }
+
+
+
+        }
+
+        .image-wrap {
+          z-index: 2;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+
+
+          @media screen and (min-width: 1025px) {
+
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        @media screen and (min-width: 1025px)  {
+          &:hover {
+            .image-wrap {
+              display: none;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

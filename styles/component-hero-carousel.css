@@ -1,0 +1,197 @@
+/* breakpoints */
+.component.hero-carousel .slick-prev::before {
+  background-image: url("../images/left_arrow.png");
+}
+
+.component.hero-carousel .slick-next:after {
+  background-image: url("../images/right_arrow.png");
+}
+
+.component.hero-carousel .slick-prev::before,
+.component.hero-carousel .slick-next:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  width: 25px;
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.component.hero-carousel .slick-dots li {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.component.hero-carousel .slick-dots li.slick-active {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.component.hero-carousel.mulitple-bottom-links .field-slidecardtitle {
+  float: initial;
+  text-align: center;
+}
+
+.component.hero-carousel.mulitple-bottom-links .field-slidecardtitle h2 {
+  color: #fff;
+  font-size: 4.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.hero-carousel.mulitple-bottom-links .field-slidecardtitle p {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slick-prev,
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slick-next {
+  display: block !important;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slick-next {
+  right: 6%;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .mobile-img {
+  height: 33rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .mobile-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 20%;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy {
+  width: 100%;
+  max-width: 100%;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption h3 a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .mobile-img {
+  height: 20rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .mobile-img img {
+  object-position: 40% 0;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .slick-next,
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .slick-prev {
+  top: 35%;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy {
+  min-height: 21rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption {
+  max-width: 100%;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption h2 {
+  font-size: 2.4rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption p {
+  font-size: 1.6rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption a h3 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption a:hover {
+  text-decoration: none;
+}
+
+.component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption .sxa-btn {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slick-next {
+    right: 3%;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slide:not(.wrap) {
+    min-height: 55rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .slick-next {
+    right: 2%;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container {
+    max-width: 114rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy {
+    border-radius: 0;
+    max-width: 46.7rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption h2 {
+    font-size: 4.4rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links) .container .body-copy .caption h3 a {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container {
+    display: flex;
+    justify-content: center;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .slick-next,
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .slick-prev {
+    top: 50%;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy {
+    background-color: transparent !important;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption {
+    max-width: 100%;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption h2 {
+    font-size: 4.4rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption p {
+    font-size: 2.5rem;
+  }
+  .component.hero-carousel.responsive-carousel:not(.mulitple-bottom-links).home-carousel .container .body-copy .caption a h3 {
+    font-size: 1.8rem;
+  }
+}

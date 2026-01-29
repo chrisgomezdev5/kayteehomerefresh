@@ -1,0 +1,163 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+#wildbird-hub-form {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+
+    @include respond-to(tab) {  
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 50px;  
+        max-width: 1366px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }    
+
+    .hubspot-form {
+        width: 100%;
+        max-width: 660px;
+        margin: auto;
+
+        .hs-form {
+            label {
+                span {
+                    color: #263971 !important;
+
+                    &::before {
+                        content: none !important;
+                    }
+                }
+            }
+        }
+        .hsfc-CheckboxFieldGroup {
+            //display: none;
+        }
+
+        .hs-pet_kaytee_wild_bird_hub_newsletter {
+            display: none;
+        }
+
+        .hs-form-field {
+            label {
+                span {
+                    color: #000;
+                }
+            }
+        }
+
+        .submitted-message {
+            color: #263971;
+            text-align: center;
+            padding-top: 30px;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        input, select {
+            border: 1px solid #263971 !important;
+        }
+
+        input[type=submit] {
+            font-weight: 400;
+            border: none !important;
+        }
+
+        
+    }
+
+}
+
+
+#wildbird-hub-form-header {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include respond-to(tab) {  
+        margin: auto;
+        padding: 50px; 
+        max-width: 1366px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    } 
+    
+    .wildbird-hub-form-header-container {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        color: #263971;
+
+        @include respond-to(tab) {
+            
+            max-width: 700px;
+        }
+
+        .subtitle {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .title {
+            margin-bottom: 20px;
+
+            h2 {
+                color: #263971;
+            }
+        }
+        .description {
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .interested {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .options-contains {
+            display: inline;
+
+            @include respond-to(tab) {
+                display: flex;
+            }            
+            .option {
+                display: flex;
+                align-items: center;
+                width: 200px;
+                margin: auto;
+                margin-bottom: 5px;
+
+                @include respond-to(tab) {
+                    width: 33%;
+                    margin: 3px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.selected {
+                    border: 1px solid #263971;
+                }
+
+                .option-image {
+                    width: 25%;
+                    padding-top: 4px;
+                }
+                .option-label {
+                    width: 75%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

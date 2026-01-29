@@ -1,0 +1,138 @@
+/* breakpoints */
+.two-column-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #046A38;
+  color: #fff;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .two-column-banner {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px;
+    max-width: 1366px;
+    position: relative;
+  }
+}
+
+.two-column-banner .left-column {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .two-column-banner .left-column {
+    width: 50%;
+    margin-bottom: unset;
+    padding-left: 70px;
+  }
+}
+
+.two-column-banner .left-column .copy-container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .two-column-banner .left-column .copy-container {
+    width: 420px;
+    padding: 50px;
+  }
+}
+
+.two-column-banner .left-column .copy-container .title {
+  margin-bottom: 10px;
+}
+
+.two-column-banner .left-column .copy-container .title h2 {
+  color: #fff;
+  font-family: 'Bernhardt CG', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.two-column-banner .left-column .copy-container .description {
+  margin-bottom: 30px;
+}
+
+.two-column-banner .left-column .copy-container .cta a {
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #E41C38;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.two-column-banner .right-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .two-column-banner .right-column {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+.two-column-banner .right-column .image-container {
+  height: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .two-column-banner .right-column .image-container {
+    width: 100%;
+  }
+}
+
+.two-column-banner .right-column .image-container img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .two-column-banner .right-column .image-container img {
+    position: absolute;
+    top: -90px;
+    right: -90px;
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .two-column-banner .right-column .image-container img {
+    right: 50px;
+  }
+}
+
+.two-column-banner .offset-image-container {
+  position: absolute;
+  bottom: 0px;
+  left: 5vw;
+  width: 90%;
+}
+
+@media screen and (min-width: 1000px) {
+  .two-column-banner .offset-image-container {
+    bottom: -60px;
+    left: 20px;
+    width: 100%;
+  }
+}

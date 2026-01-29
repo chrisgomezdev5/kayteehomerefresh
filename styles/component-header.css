@@ -1,0 +1,183 @@
+/* breakpoints */
+.component.header-shell.variant-2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.header-shell.variant-2 .wrapper {
+  background: #f70915;
+}
+
+.component.header-shell.variant-2 .wrapper .wrapper-nav {
+  background: #f70915;
+}
+
+.component.header-shell.variant-2 .component.plain-html .hamburger {
+  background: transparent;
+}
+
+.component.header-shell.variant-2 .component.plain-html .hamburger .icon-bar {
+  height: 2px;
+}
+
+.component.header-shell.variant-2.active .component.plain-html .hamburger .icon-bar:first-child {
+  transform: rotateZ(45deg) translate(8px, 8px);
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item {
+  border-bottom: none;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist {
+  margin: 1rem;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content h3 {
+  color: #fff;
+  border-bottom: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content li {
+  margin: 5px 10px;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content li a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content li a:hover {
+  text-decoration: underline;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .component.image img {
+  max-height: 12.5rem;
+  width: auto;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list {
+  position: relative;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list::before {
+  color: #fff;
+  right: 1.5rem;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list.open::before {
+  top: 1.8rem;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .top-nav {
+  background: #fff;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .top-nav .list-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .top-nav .list-wrap .list-item {
+  margin: 5px;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .top-nav .list-wrap .list-item a {
+  color: #f70915;
+  border-bottom: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.component.header-shell.variant-2 .component.page-list.variant-1 .top-nav .list-wrap .list-item a::before {
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 992px) {
+  .component.header-shell.variant-2 .wrapper {
+    background: #fff;
+  }
+  .component.header-shell.variant-2 .logo-container .file-type-icon-media-link {
+    position: absolute;
+    z-index: 1;
+    top: 2.2rem;
+  }
+  .component.header-shell.variant-2 .utility-navigation .top-nav .list-wrap {
+    margin: 0.5rem 0;
+  }
+  .component.header-shell.variant-2 .utility-navigation .top-nav .list-wrap .list-item a {
+    color: #f70915;
+    font-size: 1.4rem;
+    padding: 0px 1rem;
+  }
+  .component.header-shell.variant-2 .utility-navigation .top-nav .list-wrap .list-item a:hover {
+    text-decoration: underline;
+  }
+  .component.header-shell.variant-2 .utility-navigation .top-nav .list-wrap .list-item a::before {
+    font-weight: 400;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 {
+    padding-right: initial;
+    margin: 1rem auto;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items {
+    justify-content: flex-end;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item {
+    padding: 1.5rem;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item a {
+    font-size: 1.4rem;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist {
+    background: #fff;
+    margin: auto -1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.18);
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content h3 {
+    color: #565656;
+    border-bottom: none;
+    font-size: 1.4rem;
+    text-transform: none;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content li a {
+    color: #f70915;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 0;
+    text-transform: none;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item .submenu-utility-linklist .link-list .component-content li a:hover {
+    text-decoration: underline;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list {
+    position: static;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list::before {
+    display: none;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list:hover {
+    background: #fff;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list:hover a {
+    color: #f70915;
+    text-transform: none;
+    font-weight: 400;
+  }
+  .component.header-shell.variant-2 .component.page-list.variant-1 .items .item.has-submenu-list:hover .submenu-utility-linklist {
+    display: block;
+  }
+}

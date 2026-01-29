@@ -1,0 +1,364 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.video-icon-cta-hero {
+    
+
+    .field-wrap {
+        position: absolute;
+        width: 100%;
+        max-width: 1000px;
+        height: 400px;
+        text-align: center;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        padding: 10px;
+        @include respond-to(tab) {
+            top: 50%;
+        }
+
+        h1 {
+            color: #fff;
+            font-weight: 400;
+            font-family: 'Bernhardt CG Light', sans-serif;
+            font-size: 7vw;
+
+            @include respond-to(desktop) {
+                font-size: 5.5em;
+            }
+            
+        }
+    }
+
+    .video-container {
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+
+        @media screen and (min-width: 900px) {
+          height: 500px;  
+        } 
+
+        video {
+            width: 100%;
+        }
+
+        .volume-container {
+            position: absolute;
+            right: 10px;
+            bottom: 40px;  
+            overflow: hidden;
+            z-index: 5;
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media screen and (min-width: 768px) {
+                right: 30px;
+                bottom: 100px; 
+            }
+            @media screen and (min-width: 1070px) {
+                right: 30px;
+                bottom: 0px; 
+                
+            }
+            @include respond-to(tab) {
+                //right: 30px;
+                //bottom: 200px;  
+            }
+            .volume-on {
+                display: none;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 30px;      
+                
+                &.show {
+                    display: block;
+                }
+            }
+
+            .volume-off {
+                display: none;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 30px;  
+
+                &.show {
+                    display: block;
+                }                  
+            }            
+        }
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        overflow: hidden;
+        height: calc(100% - 5px);
+
+        @media screen and (min-width: 900px) {
+          height: 500px;  
+        } 
+    }
+
+
+    .icon-cta-container {
+        display: inline-block;
+        width: 97.5%;
+        max-width: 950px;
+        margin: auto;
+        position: relative;
+        top: -50px;
+        z-index: 5;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            display: flex;
+            top: -100px;
+        }
+
+        @media screen and (min-width: 850px) {
+            top: -60px;
+            
+        }
+
+        @include respond-to(tab) {
+            //top: -60px;
+        }
+
+        .icon-cta {
+            text-align: center;
+            margin: 5px;
+            max-width: 100%;
+            width: 100%;
+            height: 70px;
+            padding-top: 0px;
+            width: 100%;
+            border-radius: 3px;
+
+            @include respond-to(tab) {
+                max-width: 300px;
+                width: 100%;
+                height: 200px;
+                padding-top: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                pointer-events: none;
+                position: relative;
+
+                h2 {
+                    font-size: 2rem;
+                    color: #fff;
+                    font-family: 'Bernhardt CG', sans-serif;
+                    letter-spacing: 0.1em;
+                    padding-top: 10px;
+                    font-weight: 400;
+
+                    @include respond-to(tab) {
+                        font-weight: 700;
+                    }
+                }
+
+                .front {
+                    display: flex;
+                    width: 100%;
+                    padding-left: 10px;
+                    padding-top: 10px;
+
+                    @include respond-to(tab) {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        padding-top: 10px;
+                    }
+
+                    svg {
+                        width: 50px;
+                        height: auto;
+                        margin: auto;
+                        margin-right: 10px;
+
+                        @include respond-to(tab) {
+                            width: 100px;
+                        }
+                    }
+
+                    .title {
+                       padding-top: 5px; 
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: none;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url('../images/iicon.svg');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            margin-left: 10px;
+                            position: absolute;
+                            left: 65vw;
+                            top: 16px;
+                        }
+
+                        @include respond-to(tab) {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+
+                .back {
+                    opacity: 0;
+                    width: 100px;
+                    position: relative;
+                    padding-top: 5px;
+                    display: none;
+
+                    @include respond-to(tab) {
+                        width: 100%;
+                        padding-top: 30px;
+                        display: inline-block;
+                    }
+
+                    .line-1 {
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                    .line-2 {
+                        color: #000;
+                        margin-top: 10px;
+                    }
+
+                    .line-3 {
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                }
+
+            
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    cursor: pointer;
+                    a {
+                        .front {
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in;
+                        }
+                        .back {
+                            opacity: 1;
+                            transition: opacity 0.3s ease-in;
+                        } 
+                    }    
+                }   
+            }
+ 
+
+            &.yellow {
+                background-color: $yellow;
+
+                a {
+
+                    .back {
+                        color: #5F4507;
+                        background-color: $yellow-light;
+                    }
+                }
+            }
+
+            &.blue {
+                background-color: $blue;
+
+                a {
+                    .back {
+                        color: #263971;
+                        background-color: $blue-light;
+                    }
+                }                
+            } 
+            
+            &.green {
+                background-color: $green;
+
+                a {
+                    .back {
+                        color: #284F17;
+                        background-color: $green-light;
+                    }
+                }                 
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    &.yellow {
+                        background-color: $yellow-light;
+                    }
+
+                    &.blue {
+                        background-color: $blue-light;             
+                    } 
+                    
+                    &.green {
+                        background-color: $green-light;                
+                    }   
+                }   
+            }
+
+        }
+    }
+
+    .fixed-navigation {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcf9ee;
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+
+        a {
+            color: #263971;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 9px;
+            text-align: center;
+            width: 33%;
+
+            @include respond-to(tab) {
+                padding: 10px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+#wildbirds-audio {
+    display: none;
+}
