@@ -1,0 +1,69 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.rounded-divider-banner {
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    border-radius: 20px;
+
+    .rounded-divider-banner-container {
+        display: flex;    
+        background-color: #F0B323;
+        height: 435px;
+
+        .left-container {
+            width: 50%;
+            height: 100%;
+            position: relative;
+
+            .curved-white-border {
+                clip-path: ellipse(65% 90% at 35% 50%);
+                background-color: #FFF;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .image-container {
+                clip-path: ellipse(65% 90% at 35% 50%);
+                background-color: #FFD891;
+                position: absolute;
+                width: 99%;
+                height: 100%;
+            }
+        }
+
+        .right-container {
+            width: 50%;
+            padding: 20px;
+        }
+
+
+    }
+
+    &.right-image {
+
+        .rounded-divider-banner-container {
+            background-color: #359334;
+            flex-direction: row-reverse;
+
+            .left-container {
+
+                .image-container {
+                    clip-path: ellipse(65% 90% at 65% 50%);
+                    background-color: #359334;
+                    left: 5px;
+                }
+
+                .curved-white-border {
+                    clip-path: ellipse(65% 90% at 65% 50%);
+                }
+            }
+        }
+    }
+
+}

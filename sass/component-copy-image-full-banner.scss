@@ -1,0 +1,28 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.copy-image-full-banner {
+    display: flex;
+    width: 100%;
+    height: 670px;
+    background-color: #C01F3A;
+    position: relative;
+
+    .background-image {
+        position: absolute;
+        top: -95px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 9999;
+    }
+    .left-container {
+        width: 50%;
+    }
+
+    .right-container {
+        width: 50%;
+    }
+}

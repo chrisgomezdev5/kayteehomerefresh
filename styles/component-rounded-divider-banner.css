@@ -1,0 +1,59 @@
+/* breakpoints */
+.rounded-divider-banner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+
+.rounded-divider-banner .rounded-divider-banner-container {
+  display: flex;
+  background-color: #F0B323;
+  height: 435px;
+}
+
+.rounded-divider-banner .rounded-divider-banner-container .left-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.rounded-divider-banner .rounded-divider-banner-container .left-container .curved-white-border {
+  -webkit-clip-path: ellipse(65% 90% at 35% 50%);
+  clip-path: ellipse(65% 90% at 35% 50%);
+  background-color: #FFF;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.rounded-divider-banner .rounded-divider-banner-container .left-container .image-container {
+  -webkit-clip-path: ellipse(65% 90% at 35% 50%);
+  clip-path: ellipse(65% 90% at 35% 50%);
+  background-color: #FFD891;
+  position: absolute;
+  width: 99%;
+  height: 100%;
+}
+
+.rounded-divider-banner .rounded-divider-banner-container .right-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.rounded-divider-banner.right-image .rounded-divider-banner-container {
+  background-color: #359334;
+  flex-direction: row-reverse;
+}
+
+.rounded-divider-banner.right-image .rounded-divider-banner-container .left-container .image-container {
+  -webkit-clip-path: ellipse(65% 90% at 65% 50%);
+  clip-path: ellipse(65% 90% at 65% 50%);
+  background-color: #359334;
+  left: 5px;
+}
+
+.rounded-divider-banner.right-image .rounded-divider-banner-container .left-container .curved-white-border {
+  -webkit-clip-path: ellipse(65% 90% at 65% 50%);
+  clip-path: ellipse(65% 90% at 65% 50%);
+}

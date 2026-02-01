@@ -1,0 +1,24 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+.card-cta-slider {
+
+    .slide-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+
+        .slide {
+
+            slide-image {
+                
+            }
+        }
+
+    }
+}

@@ -323,4 +323,7 @@
             .css('opacity', '1');
     });
 
+
+    //animal filter component
+
 })(jQuery);

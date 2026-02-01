@@ -1,0 +1,33 @@
+/* breakpoints */
+.animal-filter .animal-filter-container .animal-filter-buttons {
+  display: flex;
+  width: 800px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.animal-filter .animal-filter-container .animal-filter-buttons .filter-button {
+  display: flex;
+}
+
+.animal-filter .animal-filter-container .animal-filter-buttons .filter-button .filter-button-icon {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+
+.animal-filter .animal-filter-container .animal-filter-buttons .filter-button.selected {
+  border-radius: 50px;
+  border: 4px solid #DDD;
+  background: #FFF;
+}
+
+.animal-filter .animal-filter-container .animal-filter-items-container {
+  display: flex;
+}
+
+.animal-filter .animal-filter-container .animal-filter-items-container .animal-filter-items {
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+}
