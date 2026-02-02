@@ -26,6 +26,12 @@
   right: 50px;
 }
 
+@media (max-width: 576px) {
+  .right-carousel-banner .left-container {
+    width: 100%;
+  }
+}
+
 .right-carousel-banner .right-container {
   width: 50%;
   height: 100%;
@@ -74,4 +80,18 @@
 
 .right-carousel-banner .right-container .navigation-buttons .carousel-button:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .right-carousel-banner .right-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .right-carousel-banner {
+    display: block;
+    padding: 20px;
+    height: 100%;
+  }
 }

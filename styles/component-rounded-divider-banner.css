@@ -36,9 +36,27 @@
   height: 100%;
 }
 
+@media (max-width: 576px) {
+  .rounded-divider-banner .rounded-divider-banner-container .left-container {
+    width: 100%;
+  }
+}
+
 .rounded-divider-banner .rounded-divider-banner-container .right-container {
   width: 50%;
   padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .rounded-divider-banner .rounded-divider-banner-container .right-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .rounded-divider-banner .rounded-divider-banner-container {
+    display: block;
+  }
 }
 
 .rounded-divider-banner.right-image .rounded-divider-banner-container {

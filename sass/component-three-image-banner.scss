@@ -83,6 +83,33 @@
                 top: 23.09px; 
                 position: absolute
             }
+
+            @media (max-width: 576px) {
+              width: 185px; 
+              height: 155px; 
+              top: 0px;
+
+              .image-cta-circle-solid  {
+                width: 125px; 
+                height: 125px; 
+                left: 0px;
+                top: 0px; 
+              }
+
+              .image-cta-circle-border {
+                width: 125px; 
+                height: 125px;   
+                left: 0px;
+                top: 0px;               
+              }
+
+              img {
+                width: 185px; 
+                height: 155px;   
+                left: 0px; 
+                top: 0px;               
+              }
+            }
         }
 
         .image-cta-title {
@@ -97,14 +124,50 @@
             font-weight: 700; 
             line-height: 32px; 
             letter-spacing: 0.30px; 
-            word-wrap: break-word
+            word-wrap: break-word;
+
+            @media (max-width: 576px) {
+              bottom: -40px;
+              font-size: 16px;
+              
+              &::after {
+                content: '›';
+                display: inline-block;
+                margin-left: 8px;
+                font-size: 20px;
+                transition: transform 0.3s ease;
+              }
+            }
         }
+        
+        a:hover .image-cta-title {
+          @media (max-width: 576px) {
+            &::after {
+              transform: translateX(4px);
+            }
+          }
+        }
+
+        @media (max-width: 576px) {
+          width: 100%; 
+          height: 100%; 
+          display: flex;
+        }
+    }
+
+    @media (max-width: 992px) {
+      
+      clip-path: ellipse(130% 65% at 50% 35%);
+    }
+    @media (max-width: 576px) {
+      clip-path: ellipse(150% 65% at 50% 35%);
+      padding-bottom: 50px;
     }
   }
 
   // Tablet
   @media (max-width: 992px) {
-    padding: 50px 0;
+    padding: 0px;
 
     .component-title-container .component-title {
       font-size: 32px;
@@ -119,7 +182,6 @@
 
   // Mobile landscape
   @media (max-width: 768px) {
-    padding: 40px 0;
 
     .compoenent-title-container .compoenent-title {
       font-size: 28px;
@@ -141,7 +203,8 @@
 
   // Mobile portrait
   @media (max-width: 576px) {
-    padding: 0;
+    
+
 
     .compoenent-title-container .compoenent-title {
       font-size: 24px;

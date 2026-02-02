@@ -25,6 +25,10 @@
             top: 50px;
             right: 50px;
         }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
     }
 
     .right-container {
@@ -76,5 +80,14 @@
             }
         }
 
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px)  {
+        display: block;
+        padding: 20px;
+        height: 100%;
     }
 }

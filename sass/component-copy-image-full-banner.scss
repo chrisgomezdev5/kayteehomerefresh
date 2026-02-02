@@ -5,7 +5,8 @@
 .copy-image-full-banner {
     display: flex;
     width: 100%;
-    height: 670px;
+    height: 40vw;
+    max-height: 670px;
     background-color: #C01F3A;
     position: relative;
 
@@ -17,12 +18,91 @@
         height: 100%;
         object-fit: cover;
         z-index: 9999;
+
+        img {
+            width: auto;
+            height: 50vw;
+            max-width: 2342px;
+            max-height: 766px;
+            position: absolute;
+            right: -150px;
+            top: -10px;            
+        }
     }
+
     .left-container {
         width: 50%;
+        padding: 8vw;
+
+        .left-container-title {
+            color: white; 
+            font-size: 36px; 
+            font-family: Ubuntu; 
+            font-weight: 700; 
+            line-height: 40px; 
+            letter-spacing: 0.37px; 
+            word-wrap: break-word;
+        }
+
+        .left-container-copy {
+            color: white; 
+            font-size: 18px; 
+            font-family: Roboto; 
+            font-weight: 500; 
+            line-height: 26px; 
+            word-wrap: break-word;
+        }
+
+        .left-container-cta-outer {
+            width: 341px; 
+            height: 74px; 
+            padding-left: 53px; 
+            padding-right: 53px; 
+            padding-top: 12px; 
+            padding-bottom: 12px; 
+            background: white; 
+            border-radius: 41943000px; 
+            outline: 6px rgba(255, 255, 255, 0.25) solid; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 10px; 
+            display: inline-flex;
+        }
+
+        .left-container-cta-inner {
+            text-align: center; 
+            color: #333333; 
+            font-size: 16px; 
+            font-family: Ubuntu; 
+            font-weight: 700; 
+            line-height: 24px; 
+            letter-spacing: 0.30px; 
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
     }
 
     .right-container {
         width: 50%;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 912px; 
+            max-height: 589px;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        display: block;
+        padding: 20px;
+        height: 100%;
     }
 }

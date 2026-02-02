@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const browserSync = require('browser-sync').create();
 const { getTask, login, configUtils, setUserData } = require('@sxa/celt');
 global.rootPath = __dirname;
 global.configUtils = configUtils;
@@ -123,7 +124,40 @@ module.exports.rebuildMain = gulp.series(
     uploadJsTasks, uploadCssTasks
 )
 
+// Local development server
+function serve(done) {
+    browserSync.init({
+        server: {
+            baseDir: './pages',
+            index: 'index.html'
+        },
+        port: 3000,
+        open: true,
+        notify: false
+    });
+    done();
+}
 
+function reload(done) {
+    browserSync.reload();
+    done();
+}
+
+function watchFiles() {
+    // Watch SASS files and reload after compilation
+    gulp.watch('sass/**/*.scss', gulp.series(sassComponentsTasks, reload));
+    
+    // Watch JS files and reload
+    gulp.watch('scripts/**/*.js', reload);
+    
+    // Watch CSS files and reload
+    gulp.watch('styles/**/*.css', reload);
+    
+    // Watch HTML files and reload
+    gulp.watch('pages/**/*.html', reload);
+}
+
+module.exports.serve = gulp.series(serve, watchFiles);
 
 
 
