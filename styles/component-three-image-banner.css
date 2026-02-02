@@ -157,15 +157,13 @@
 
 @media (max-width: 992px) {
   .three-image-banner .images-cta-container {
-    -webkit-clip-path: ellipse(130% 65% at 50% 35%);
-    clip-path: ellipse(130% 65% at 50% 35%);
+    -webkit-clip-path: ellipse(150% 65% at 50% 35%);
+    clip-path: ellipse(150% 65% at 50% 35%);
   }
 }
 
 @media (max-width: 576px) {
   .three-image-banner .images-cta-container {
-    -webkit-clip-path: ellipse(150% 65% at 50% 35%);
-    clip-path: ellipse(150% 65% at 50% 35%);
     padding-bottom: 50px;
   }
 }

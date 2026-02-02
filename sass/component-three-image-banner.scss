@@ -156,11 +156,11 @@
     }
 
     @media (max-width: 992px) {
-      
-      clip-path: ellipse(130% 65% at 50% 35%);
-    }
-    @media (max-width: 576px) {
       clip-path: ellipse(150% 65% at 50% 35%);
+    }
+    
+    @media (max-width: 576px) {
+
       padding-bottom: 50px;
     }
   }
