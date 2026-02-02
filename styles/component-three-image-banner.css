@@ -136,7 +136,7 @@
 
 @media (max-width: 576px) {
   .three-image-banner {
-    padding: 30px 0;
+    padding: 0;
   }
   .three-image-banner .compoenent-title-container .compoenent-title {
     font-size: 24px;

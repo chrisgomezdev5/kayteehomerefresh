@@ -326,4 +326,90 @@
 
     //animal filter component
 
+    // Function to populate animal items
+    function populateAnimalItems(animalType) {
+        var $container = $('.animal-filter');
+        var $activeItems = $container.find('.animal-filter-items[data-animal="' + animalType + '"]');
+        var data = animalData[animalType];
+        var startIndex = animalcurrentIndex[animalType];
+        
+        // Get all 8 animal-filter-item containers
+        var $items = $activeItems.find('.animal-filter-item');
+        
+        // Populate each of the 8 containers
+        $items.each(function(index) {
+            var dataIndex = (startIndex + index) % data.length;
+            var itemData = data[dataIndex];
+            
+            $(this).find('.animal-filter-item-icon img').attr('src', itemData.image);
+            $(this).find('.animal-filter-item-title').text(itemData.title);
+        });
+    }
+
+    // Initialize on page load - populate the first selected animal type
+    $(document).ready(function() {
+        var $container = $('.animal-filter');
+        var $selectedButton = $container.find('.filter-button.selected');
+        if ($selectedButton.length === 0) {
+            $selectedButton = $container.find('.filter-button').first().addClass('selected');
+        }
+        var animalType = $selectedButton.data('animal');
+        
+        // Hide all animal-filter-items except the selected one
+        $container.find('.animal-filter-items').hide();
+        $container.find('.animal-filter-items[data-animal="' + animalType + '"]').show();
+        
+        // Populate the visible items
+        populateAnimalItems(animalType);
+    });
+
+    // Filter button click handler
+    $('.animal-filter .filter-button').on('click', function() {
+        var animalType = $(this).data('animal');
+        var $container = $(this).closest('.animal-filter');
+        
+        // Toggle selected class on buttons
+        $container.find('.filter-button').removeClass('selected');
+        $(this).addClass('selected');
+        
+        // Hide all animal filter items
+        $container.find('.animal-filter-items').hide();
+        
+        // Show only the matching animal type items
+        var $activeItems = $container.find('.animal-filter-items[data-animal="' + animalType + '"]');
+        $activeItems.show();
+        
+        // Reset index and populate
+        animalcurrentIndex[animalType] = 0;
+        populateAnimalItems(animalType);
+    });
+
+    // Left arrow - shift array left (items move right visually)
+    $('.animal-filter .left-arrow').on('click', function() {
+        var $container = $(this).closest('.animal-filter');
+        var $selectedButton = $container.find('.filter-button.selected');
+        var animalType = $selectedButton.data('animal');
+        var data = animalData[animalType];
+        
+        // Move index left (wrapping around)
+        animalcurrentIndex[animalType] = (animalcurrentIndex[animalType] - 1 + data.length) % data.length;
+        
+        // Repopulate items
+        populateAnimalItems(animalType);
+    });
+
+    // Right arrow - shift array right (items move left visually)
+    $('.animal-filter .right-arrow').on('click', function() {
+        var $container = $(this).closest('.animal-filter');
+        var $selectedButton = $container.find('.filter-button.selected');
+        var animalType = $selectedButton.data('animal');
+        var data = animalData[animalType];
+        
+        // Move index right (wrapping around)
+        animalcurrentIndex[animalType] = (animalcurrentIndex[animalType] + 1) % data.length;
+        
+        // Repopulate items
+        populateAnimalItems(animalType);
+    });
+
 })(jQuery);

@@ -87,6 +87,7 @@
   @media (max-width: 576px) {
     .hero-video-container {
       height: 400px;
+      clip-path: ellipse(120% 60% at 50% 40%);
 
       .hero-video-title {
         font-size: 28px;

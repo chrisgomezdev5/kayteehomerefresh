@@ -80,6 +80,8 @@
 @media (max-width: 576px) {
   .hero-video .hero-video-container {
     height: 400px;
+    -webkit-clip-path: ellipse(120% 60% at 50% 40%);
+    clip-path: ellipse(120% 60% at 50% 40%);
   }
   .hero-video .hero-video-container .hero-video-title {
     font-size: 28px;
